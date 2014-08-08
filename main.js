@@ -16,13 +16,12 @@ function Get_scores() {
 
   var scores = 0;
   scores = score1 + score2_1 +score2_2 + score3_1 +score3_2 + score4_1 + score4_2 + score5;
-  alert(scores);
 
   document.getElementById("scores").value = scores;
   return false;
 
-
 }
+
 function Get_Score1() {
   var score1_1 = 0;
   var value1_1_1 = document.getElementById("1_1_1").value;
@@ -30,12 +29,9 @@ function Get_Score1() {
       score1_1 += 5;
   }
 
-
-
   var score1_2 = 0;
-  var value1_2 = [];
-  var value = [];
   var answer = ["继承性","多态性","封装性"];
+  var value = [];
   value.push(document.getElementById("1_2_1").value);
   value.push(document.getElementById("1_2_2").value);
   value.push(document.getElementById("1_2_3").value);
@@ -59,7 +55,6 @@ function Get_Score2_1() {
   return score2_1;
 }
 
-
 function Get_Score2_2() {
   var score2_2 = 0;
   if(document.getElementById("2_1_2").checked){
@@ -67,6 +62,7 @@ function Get_Score2_2() {
   }
   return score2_2;
 }
+
 function Get_Score3_1() {
   var score3_1 = 0;
   if(!document.getElementById("3_1_3").checked){
